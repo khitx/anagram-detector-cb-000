@@ -8,6 +8,7 @@ class Anagram
   end
 
   def match(pos_anagrams)
+    binding.pry
     pos_anagrams.collect { |p_a| p_a.split(/./).sort == @word.split(/./).sort }
   end
 end
